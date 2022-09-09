@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chess board. Canvas API, JS/ES5</title>
+</head>
+ 
+<body>
+
+    <P>  A   B   C   D   F   G   H</P>
+    <script>
+        
+
+ document.write('<table style = "border-style : solid">');
+for (var k = 1; k <= 8; k++) {
+document.write('<tr>');
+if (k % 2 == 0) {
+for (var i = 1; i <= 8; i++) {
+if (i % 2 == 0) {
+document.write('<td style = "width : 30px; height : 30px; background-color : white"></td>');
+}
+else {
+document.write('<td style = "width : 30px; height : 30px; background-color : black"></td>');
+};
+};
+}
+else {
+for (var i = 1; i <= 8; i++) {
+if (i % 2 == 0) {
+document.write('<td style = "width : 30px; height : 30px; background-color : black"></td>');
+}
+else {
+document.write('<td style = "width : 30px; height : 30px; background-color : white"></td>');
+};
+};
+}
+document.write('</tr>');
+};
+document.write('</table>');
+    </script>
+</body>
+ 
+</html>
